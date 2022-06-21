@@ -1,31 +1,34 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
+import chris_prof_pic from "../assets/chris_prof_pic.jpg";
 
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
         <div class="split left">
           <div className="centered">
-            <img
+            <img 
               className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
-            ></img>
+              // Image goes here
+              src = {chris_prof_pic}
+              alt = "Profile Pic"
+              ></img>
           </div>
         </div>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <div className="name_title"> Christopher Demirjian</div>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+              Christopher grew up in Westchester New York and currently studies computer science at Columbia University in New York City.
+            </div>
+            <div className="brief_description">
+              Christopher loves animals, and has two dogs!
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
